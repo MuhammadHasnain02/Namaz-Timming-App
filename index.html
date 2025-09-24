@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz-Timming-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#0F9A80] text-black">
+
+    <section class="flex flex-row justify-center h-screen items-center space-x-4">
+
+        <div class="flex flex-col bg-[#ebebeb] w-100 px-8 py-6 space-y-5 rounded-lg">
+
+            <div class="">
+                <h1 class="text-[22px] text-[#05ac8d] font-bold">Namaz Timmings Check</h1>
+                <h3 class="text-[14px] text-black font-medium">Enter any City and Country then check Namaz Timmings.</h3>
+            </div>
+            <div>
+                <label for="" class="flex flex-col text-[15px] font-medium">
+                    City
+                    <input type="text" id="cityInp" class="border-2 border-[#0F9A80] text-sm px-4 py-2.5 rounded-xl mt-1 focus:outline-none">
+                </label>
+            </div>
+            <div>
+                <label for="" class="flex flex-col text-[15px] font-medium">
+                    Country
+                    <input type="text" id="countryInp" class="border-2 border-[#0F9A80] text-sm px-4 py-2.5 rounded-xl mt-1 focus:outline-none">
+                </label>
+            </div>
+            <div class="text-center">
+                <button class="bg-[#048d74] text-white text-[15px] font-semibold w-full px-4 py-2 rounded-xl transition duration-500 ease-in-out hover:scale-95 hover:cursor-pointer">Check</button>
+            </div>
+
+        </div>
+        <div class="hidden flex flex-col bg-gray-800 px-7 py-6 space-y-5 rounded-lg">
+
+            <div class="">
+                <h1 class="text-xl font-semibold">Namaz Timmings Check</h1>
+            </div>
+            <div>
+                <label for="" class="flex flex-col font-medium">
+                    City
+                    <input type="text" id="cityInp" class="bg-gray-900 px-4 py-1 rounded-xl mt-1 focus:outline-none">
+                </label>
+            </div>
+            <div>
+                <label for="" class="flex flex-col font-medium">
+                    Country
+                    <input type="text" id="countryInp" class="bg-gray-900 px-4 py-1 rounded-xl mt-1 focus:outline-none">
+                </label>
+            </div>
+            <div class="text-center">
+                <button class="bg-blue-900 text-[15px] font-semibold px-4 py-2 rounded-xl hover:cursor-pointer">Check</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
